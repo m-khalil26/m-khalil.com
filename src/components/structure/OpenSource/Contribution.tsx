@@ -3,14 +3,13 @@ import {
   Badge,
   Flex,
   HStack,
-  Icon,
+  Image,
   LinkBox,
   LinkOverlay,
   Tag,
   Text,
 } from '@chakra-ui/react'
-import type { RoleType, Skill } from '@utils/types'
-import { config } from '@config/config'
+import type { RoleType, Education } from '@utils/types'
 
 export interface ContributionProps {
   user: string
@@ -19,7 +18,7 @@ export interface ContributionProps {
   githubUrl: string
   description: { en: string; fr: string }
   topics: string[]
-  language: Skill
+  language: Education
 }
 
 export const Contribution: React.FC<ContributionProps> = ({
@@ -53,13 +52,13 @@ export const Contribution: React.FC<ContributionProps> = ({
           </Text>
         </HStack>
         <Flex mt='2' mb='4'>
-          <Badge colorScheme={role.color}>{t(role.label)}</Badge>
+          <Badge colorScheme={role.color}>{role.label}</Badge>
         </Flex>
         <Text flex='1' mb='4'>
           {description[i18n.language as keyof typeof description]}
         </Text>
         <Flex justify='space-between'>
-          <HStack>
+        <HStack>
             {topics.map((topic) => (
               <Tag
                 key={topic}
@@ -71,7 +70,12 @@ export const Contribution: React.FC<ContributionProps> = ({
               </Tag>
             ))}
           </HStack>
-          <Icon as={language.icon} color={language.color} boxSize='6' />
+          <Image 
+            src={language.icon}
+            alt={`${language.name} logo`}
+            boxSize='10'
+            width='15'
+          />
         </Flex>
       </Flex>
     </LinkBox>

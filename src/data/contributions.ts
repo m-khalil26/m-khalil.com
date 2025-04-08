@@ -3,40 +3,59 @@ import type { ContributionProps } from '@components/structure/OpenSource/Contrib
 
 export const contributions: ContributionProps[] = [
   {
-    user: 'chr-ge',
-    repository: 'react-column-select',
+    user: '',
+    repository: 'Lycée privé LES IRIS',
     role: {
-      label: 'creator',
+      label: 'Baccalaureat',
       color: 'green',
     },
-    githubUrl: 'https://github.com/chr-ge/react-column-select',
+    githubUrl: '',
     description: {
-      en: 'React component to select options by transferring them from one column to another.',
-      fr: "React component pour sélectionner des options en les transférant d'une colonne à une autre.",
+      en: 'Scientific Baccalaureate with distinctions (average grade: 15.7/20), including a score of 20/20 in Mathematics.',
+      fr: "Baccalauréat scientifique avec mention Bien (moyenne : 15,7/20), dont 20/20 en mathématiques.",
     },
-    topics: ['react', 'select', 'form'],
+    topics: [],
     language: {
       name: 'Typescript',
-      icon: SiTypescript,
+      icon: 'img/les iris.png',
       color: '#3178C6',
     },
   },
   {
-    user: 'astrofox-io',
-    repository: 'astrofox',
+    user: '',
+    repository: 'Université de Rouen Normandie',
     role: {
-      label: 'contributor',
+      label: 'Licence',
       color: 'orange',
     },
-    githubUrl: 'https://github.com/astrofox-io/astrofox',
+    githubUrl: '',
     description: {
-      en: 'Astrofox is a motion graphics program that lets you turn audio into amazing videos.',
-      fr: "Astrofox est un programme d'animation graphique qui vous permet de transformer l'audio en vidéos étonnantes.",
+      en: 'Bachelor’s degree in Mathematics and Computer Science with distinction (overall GPA: 14.8/20).',
+      fr: "Licence en Mathématiques et Informatique avec mention (moyenne générale : 14,8/20).",
     },
-    topics: ['audio', 'video', 'audio-visualizer'],
+    topics: [],
     language: {
       name: 'Javascript',
-      icon: SiJavascript,
+      icon: 'img/univ-rouen.png',
+      color: '#F7DF1E',
+    },
+  },
+  {
+    user: '',
+    repository: 'Ecole supérieure de génie informatique de Paris',
+    role: {
+      label: 'Master',
+      color: 'blue',
+    },
+    githubUrl: '',
+    description: {
+      en: 'Master’s Degree (M2) in Software Architecture with honors (overall GPA: 15.1/20)',
+      fr: "Master 2 Architecture Logicielle avec mention (moyenne générale : 15,1/20)",
+    },
+    topics: [],
+    language: {
+      name: 'Javascript',
+      icon: 'img/esgi.png',
       color: '#F7DF1E',
     },
   },

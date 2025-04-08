@@ -9,7 +9,7 @@ import {
   SiTailwindcss,
 } from 'react-icons/si'
 import HypzzImage from '@public/img/projects/hypzz.png'
-import KalabamImage from '@public/img/projects/kalabam.png'
+import EXIT from '@public/img/projects/exIT.png'
 import WhyPigeonsImage from '@public/img/projects/why-pigeons-full.png'
 import type { Project } from '@utils/types'
 
@@ -18,7 +18,7 @@ export const projects: Project[] = [
     id: '1',
     title: 'Maraudr',
     description: {
-      en: 'Maraudr is an humain sized, intuitive ERP that helps charity associations in their daily work',
+      en: 'Maraudr is a human sized, intuitive ERP that helps charity associations in their daily work',
       fr: 'Maraudr est un ERP à taille humaine, facile à prendre en main qui a pour but d\'organiser et d\'aider les associaions dans leurs travails journaliers',
     },
     image: { src: HypzzImage },
@@ -43,7 +43,7 @@ export const projects: Project[] = [
       en: 'A social media that offers and eninvrionement for sharing, executing and reviewing code.',
       fr: 'Un réseau social qui offre un enivronement pour déployer, partager et executer du code entre amis ou collègues.',
     },
-    image: { src: KalabamImage },
+    image: { src: EXIT },
     homepage: 'https://kalabam.com/?ref=chr-ge.com',
     github: 'https://github.com/chr-ge/kalabam',
     technologies: [

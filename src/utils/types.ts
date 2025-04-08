@@ -12,13 +12,19 @@ export interface Tag {
 }
 
 export interface RoleType {
-  label: 'creator' | 'contributor'
+  label: 'creator' | 'contributor' | 'Baccalaureat' | 'Licence' | 'Master'
   color: string
 }
 
 export interface Skill {
   name: string
   icon: IconType | ((props: IconProps) => JSX.Element)
+  color: string
+}
+
+export interface Education {
+  name: String
+  icon: string 
   color: string
 }
 
