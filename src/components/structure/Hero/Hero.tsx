@@ -98,12 +98,12 @@ export const Hero: React.FC = () => {
       <Image
         src='/img/childhood.jpg'
         // alt={t('hero-alt')}
-        boxSize={{ base: '200px', md: '300px' }}
+        boxSize={{ base: '450px', md: '450px' }}
         objectFit='cover'
         ml={{ base: '4', md: '8' }}
         borderRadius='2xl'
         border='1px solid black'
-        p='5px' // Added padding to detach the border
+        p='10px' // Added padding to detach the border
         bg='white' // Added background color to make the gap visible
       />
     </MotionFlex>

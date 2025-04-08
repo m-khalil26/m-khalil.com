@@ -8,7 +8,7 @@ import {
   SiStripe,
   SiTailwindcss,
 } from 'react-icons/si'
-import HypzzImage from '@public/img/projects/hypzz.png'
+import Maraudr from '@public/img/projects/maraudR.png'
 import EXIT from '@public/img/projects/exIT.png'
 import WhyPigeonsImage from '@public/img/projects/why-pigeons-full.png'
 import type { Project } from '@utils/types'
@@ -21,7 +21,7 @@ export const projects: Project[] = [
       en: 'Maraudr is a human sized, intuitive ERP that helps charity associations in their daily work',
       fr: 'Maraudr est un ERP à taille humaine, facile à prendre en main qui a pour but d\'organiser et d\'aider les associaions dans leurs travails journaliers',
     },
-    image: { src: HypzzImage },
+    image: { src: Maraudr },
     homepage: 'https://hypzz.chr-ge.com/?ref=chr-ge.com',
     technologies: [
       { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
@@ -65,7 +65,7 @@ export const projects: Project[] = [
     title: 'BETL',
     description: {
       en: 'An ETL for extracting use-case driven anonymized production datasets, and loading it in test environement',
-      fr: 'Un ETL qui permet l\'extraction de jeux de données ciblés selon le cas d\'usage, tout en les anonymisant et les charegant dans des environnements de tests ',
+      fr: 'Un ETL qui permet l\'extraction de jeux de données ciblés selon le cas d\'usage, tout en les anonymisant et les charegeant dans des environnements de tests ',
     },
     image: { src: WhyPigeonsImage },
     github: 'https://github.com/chr-ge/why-pigeons',

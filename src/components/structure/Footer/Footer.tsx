@@ -34,7 +34,7 @@ export const Footer: React.FC = () => {
         mb={{ base: '16', md: 0 }}
       >
         <Text casing='uppercase'>{config.copyright}</Text>
-        <Text casing='uppercase' cursor='url(/img/maple-leaf.png), text'>
+        <Text casing='uppercase' cursor='url(/img/france.png), text'>
           {t('made-in-mtl')}
         </Text>
       </Stack>

@@ -85,7 +85,7 @@ export const ProjectShowcase: React.FC<Project> = ({
           borderBottom='none'
           borderTopRadius='1.375rem'
         >
-          <ImageWithBorder title={title} image={image} />
+          <ImageWithBorder title={title} image={image}/>
         </Box>
         <MotionBox
           display={{ base: 'none', md: 'block' }}
