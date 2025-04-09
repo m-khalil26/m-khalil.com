@@ -2,6 +2,7 @@ import { SiJavascript, SiTypescript } from 'react-icons/si'
 import type { ContributionProps } from '@components/structure/OpenSource/Contribution'
 
 export const contributions: ContributionProps[] = [
+
   {
     user: '',
     repository: 'Lycée privé LES IRIS',

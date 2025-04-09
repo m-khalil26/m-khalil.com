@@ -13,6 +13,7 @@ export const PhotoItem = ({ src, alt, onClick }: PhotoItemProps) => {
       shadow="lg"
       border="1px solid"
       borderColor="black"
+      borderRadius="2xl"
       h="100%"
       w="100%"
       onClick={onClick}

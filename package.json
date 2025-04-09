@@ -47,6 +47,7 @@
     "react-icons": "^5.4.0",
     "react-intersection-observer": "^8.34.0",
     "sharp": "^0.32.6",
+    "yet-another-react-lightbox": "^3.22.0",
     "zod": "^3.24.2"
   },
   "devDependencies": {

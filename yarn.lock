@@ -2693,6 +2693,7 @@ __metadata:
     react-intersection-observer: ^8.34.0
     sharp: ^0.32.6
     typescript: ^4.9.5
+    yet-another-react-lightbox: ^3.22.0
     zod: ^3.24.2
   languageName: unknown
   linkType: soft
@@ -8904,6 +8905,23 @@ __metadata:
     y18n: ^5.0.5
     yargs-parser: ^21.1.1
   checksum: 73b572e863aa4a8cbef323dd911d79d193b772defd5a51aab0aca2d446655216f5002c42c5306033968193bdbf892a7a4c110b0d77954a7fdf563e653967b56a
+  languageName: node
+  linkType: hard
+
+"yet-another-react-lightbox@npm:^3.22.0":
+  version: 3.22.0
+  resolution: "yet-another-react-lightbox@npm:3.22.0"
+  peerDependencies:
+    "@types/react": ^16 || ^17 || ^18 || ^19
+    "@types/react-dom": ^16 || ^17 || ^18 || ^19
+    react: ^16.8.0 || ^17 || ^18 || ^19
+    react-dom: ^16.8.0 || ^17 || ^18 || ^19
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    "@types/react-dom":
+      optional: true
+  checksum: 50dc7897b5f53246ee3df4bd54f949bc3ded636b6c896513093b80f06da5a9d19812c137a2d0e811c6ae5694de745549050cca4a9a63636b7a5dac0570a180bf
   languageName: node
   linkType: hard
 

@@ -1,4 +1,4 @@
-import { Center, Icon, Tooltip, useDisclosure } from '@chakra-ui/react'
+import { Center, Icon, useDisclosure, Tooltip } from '@chakra-ui/react'
 import type { Skill } from '@utils/types'
 
 export interface SkillProps extends Skill {

@@ -25,6 +25,7 @@ const Home: NextPage = () => {
       <SelectedProjects />
       <OpenSource />
       <SkillSet />
+      <SlashDivider />
       <Photos/>
       <ContactMe />
     </MainLayout>

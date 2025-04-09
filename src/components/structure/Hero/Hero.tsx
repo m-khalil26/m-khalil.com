@@ -12,37 +12,6 @@ const MotionFlex = motion(Flex)
 const MotionHeading = motion(Heading)
 const MotionButton = motion(Button)
 
-const content = {
-  education: [
-    {
-      institute: 'Ecole Supérieure De Génie Informatique De Paris',
-      location: 'Paris',
-      degree: 'Master 2 / Ingénieur',
-      time: {
-        start: 2023,
-        end: 2025,
-      },
-    },
-    {
-      institute: 'Université de Rouen Normandie',
-      location: 'Rouen',
-      degree: 'Licence Informatique (Mention bien - 15)',
-      time: {
-        start: 2019,
-        end: 2023,
-      },
-    },
-    {
-      institute: 'Lycée privé Les Iris',
-      location: '',
-      degree: 'Baccalaureat scientifique (Mention bien - 16)',
-      time: {
-        start: 2019,
-        end: 2023,
-      },
-    },
-  ],
-};
 
 export const Hero: React.FC = () => {
   const { t } = useTranslation('common')
@@ -96,7 +65,7 @@ export const Hero: React.FC = () => {
         </NextLink>
       </VStack>
       <Image
-        src='/img/childhood.jpg'
+        src='/img/childhood-2.jpg'
         // alt={t('hero-alt')}
         boxSize={{ base: '450px', md: '450px' }}
         objectFit='cover'
