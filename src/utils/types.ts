@@ -12,7 +12,7 @@ export interface Tag {
 }
 
 export interface RoleType {
-  label: 'creator' | 'contributor' | 'Baccalaureat' | 'Licence' | 'Master'
+  label: 'creator' | 'contributor' | 'Baccalaureat' | 'Licence' | 'Master' | 'Alternance' | 'Stage'
   color: string
 }
 

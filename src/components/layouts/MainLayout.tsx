@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 import { Box, type BoxProps, Flex, Container } from '@chakra-ui/react'
 import { Footer, Header } from '@components/structure'
+import { ExperienceList } from '@components/structure/Experience/ExperienceList'
 
 interface MainLayoutProps extends BoxProps {
   children: ReactNode

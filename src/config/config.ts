@@ -72,8 +72,8 @@ export const config: Config = {
   },
   email: 'george@chr-ge.com',
   email_link: 'mailto:george@chr-ge.com',
-  github: 'https://github.com/chr-ge',
-  linkedin: 'https://www.linkedin.com/in/chr-ge/',
+  github: 'https://github.com/m-khalil26',
+  linkedin: 'https://www.linkedin.com/in/khalil-m-648234211/',
 }
 
 interface Config {

@@ -11,6 +11,7 @@ import {
 } from '@components/structure'
 import { useLogMessage } from '@utils/hooks/use-log-message'
 import { config } from '@config/config'
+import { ExperienceList } from '@components/structure/Experience/ExperienceList'
 
 const Home: NextPage = () => {
   useLogMessage()
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
     <MainLayout>
       <Hero />
       <SlashDivider />
+      <ExperienceList />
       <SelectedProjects />
       <OpenSource />
       <SkillSet />
