@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { Box, Button, HStack, useDimensions } from '@chakra-ui/react'
+import { Box, Button, HStack } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 
 const MotionBox = motion(Box)
@@ -77,4 +77,33 @@ export const TagsBar: React.FC<TagsBarProps> = ({
       </HStack>
     </MotionBox>
   )
+}
+
+function useDimensions(ref: React.RefObject<HTMLElement>, observe = true) {
+  const [dimensions, setDimensions] = useState<DOMRect | null>(null);
+
+  useEffect(() => {
+    if (!ref.current) return;
+    
+    const updateDimensions = () => {
+      if (ref.current) {
+        const rect = ref.current.getBoundingClientRect();
+        setDimensions(rect);
+      }
+    };
+    
+    updateDimensions();
+    
+    if (observe) {
+      window.addEventListener('resize', updateDimensions);
+      window.addEventListener('scroll', updateDimensions);
+      
+      return () => {
+        window.removeEventListener('resize', updateDimensions);
+        window.removeEventListener('scroll', updateDimensions);
+      };
+    }
+  }, [ref, observe]);
+
+  return dimensions ? { borderBox: dimensions } : null;
 }

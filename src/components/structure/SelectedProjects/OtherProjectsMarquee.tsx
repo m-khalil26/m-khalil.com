@@ -1,9 +1,9 @@
 import { useTranslation } from 'next-i18next'
+import { keyframes } from '@emotion/react';
 import {
   Flex,
   HStack,
   Link,
-  keyframes,
   usePrefersReducedMotion,
 } from '@chakra-ui/react'
 import { config } from '@config/config'

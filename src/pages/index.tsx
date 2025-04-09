@@ -12,6 +12,7 @@ import {
 import { useLogMessage } from '@utils/hooks/use-log-message'
 import { config } from '@config/config'
 import { ExperienceList } from '@components/structure/Experience/ExperienceList'
+import { Photos } from '@components/structure/Hobbies/Photos'
 
 const Home: NextPage = () => {
   useLogMessage()
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
       <SelectedProjects />
       <OpenSource />
       <SkillSet />
+      <Photos/>
       <ContactMe />
     </MainLayout>
   )
