@@ -75,31 +75,31 @@ export const Experience: React.FC<ExperienceProps> = ({
             </Flex>
           </Flex>
         </AccordionButton>
-        
+
         <AccordionPanel pb={4}>
-        <List spacing={2} mb={4}>
+          <List spacing={2} mb={4}>
             {description[i18n.language as keyof typeof description]
-            .split('.')
-            .filter(item => item.trim())
-            .map((item, index) => (
+              .split('.')
+              .filter(item => item.trim())
+              .map((item, index) => (
                 <ListItem key={index} display="flex" alignItems="start">
-                <ListIcon as={HiChevronRight} color={logo.color} mt={1} />
-                <Text>{item.trim()}</Text>
+                  <ListIcon as={HiChevronRight as React.ElementType} color={logo.color} mt={1} />
+                  <Text>{item.trim()}</Text>
                 </ListItem>
-            ))}
-        </List>
-        <Flex gap={2} flexWrap="wrap">
+              ))}
+          </List>
+          <Flex gap={2} flexWrap="wrap">
             {skills.map((skill) => (
-            <Badge
+              <Badge
                 key={skill}
                 colorScheme="blue"
                 variant="subtle"
                 borderRadius="full"
-            >
+              >
                 {skill}
-            </Badge>
+              </Badge>
             ))}
-        </Flex>
+          </Flex>
         </AccordionPanel>
       </AccordionItem>
     </Accordion>
