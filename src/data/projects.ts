@@ -24,10 +24,10 @@ export const projects: Project[] = [
     image: { src: Maraudr },
     homepage: 'https://hypzz.chr-ge.com/?ref=chr-ge.com',
     technologies: [
-      { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
-      { name: 'React', icon: SiReact, color: '#61DAFB' },
-      { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
-      { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
+      // { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
+      // { name: 'React', icon: SiReact, color: '#61DAFB' },
+      // { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
+      // { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
     ],
     tags: [
       { label: 'full-stack', colorScheme: 'pink' },
@@ -47,10 +47,10 @@ export const projects: Project[] = [
     homepage: 'https://kalabam.com/?ref=chr-ge.com',
     github: 'https://github.com/chr-ge/kalabam',
     technologies: [
-      { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
-      { name: 'React', icon: SiReact, color: '#61DAFB' },
-      { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
-      { name: 'ChakraUI', icon: SiChakraui, color: '#319795' },
+      // { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
+      // { name: 'React', icon: SiReact, color: '#61DAFB' },
+      // { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
+      // { name: 'ChakraUI', icon: SiChakraui, color: '#319795' },
     ],
     tags: [
       { label: 'full-stack', colorScheme: 'pink' },
@@ -70,10 +70,10 @@ export const projects: Project[] = [
     image: { src: WhyPigeonsImage },
     github: 'https://github.com/chr-ge/why-pigeons',
     technologies: [
-      { name: 'Laravel', icon: SiLaravel, color: '#FF2D20' },
-      { name: 'React', icon: SiReact, color: '#61DAFB' },
-      { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791' },
-      { name: 'Stripe', icon: SiStripe, color: '#008CDD' },
+      // { name: 'Laravel', icon: SiLaravel, color: '#FF2D20' },
+      // { name: 'React', icon: SiReact, color: '#61DAFB' },
+      // { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791' },
+      // { name: 'Stripe', icon: SiStripe, color: '#008CDD' },
     ],
     tags: [
       { label: 'full-stack', colorScheme: 'pink' },
