@@ -10,8 +10,7 @@ import {
   Text,
   useDisclosure,
 } from '@chakra-ui/react'
-import { HiOutlineMenuAlt4 } from 'react-icons/hi'
-import { VscChromeClose } from 'react-icons/vsc'
+import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
 import { usePostHog } from 'posthog-js/react'
 import { NAME } from '@config/config'
 import { Menu } from './Menu'
@@ -59,7 +58,7 @@ export const Header: React.FC = () => {
           </Button>
           <IconButton
             aria-label={t(isOpen ? 'close-menu' : 'open-menu')}
-            icon={isOpen ? <VscChromeClose /> : <HiOutlineMenuAlt4 />}
+            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             variant='icon'
             size='icon'
             onClick={onToggle}

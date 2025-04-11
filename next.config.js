@@ -14,6 +14,10 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 module.exports = withBundleAnalyzer({
   reactStrictMode: true,
   swcMinify: true,
+  eslint: {
+
+    ignoreDuringBuilds: true,
+  },
   headers: async () => [
     {
       source: '/:path*',

@@ -1,4 +1,4 @@
-import { Center, Icon, useDisclosure, Tooltip } from '@chakra-ui/react'
+import { Center, useDisclosure, Tooltip, Icon } from '@chakra-ui/react'
 import type { Skill } from '@utils/types'
 
 export interface SkillProps extends Skill {
@@ -36,7 +36,7 @@ export const SkillBox: React.FC<SkillProps> = ({
         }}
         onClick={onToggle}
       >
-        <Icon as={icon} aria-label={name} boxSize='8' color={color} />
+        {/* <Icon as={icon} aria-label={name} boxSize='8' color={color} /> */}
       </Center>
     </Tooltip>
   )

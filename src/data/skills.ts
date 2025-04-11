@@ -34,7 +34,7 @@ export const skills: SkillGroup[] = [
       { name: 'Rust', icon: SiRust, color: 'brown' },
       { name: 'OCaml', icon: SiOcaml, color: 'orange' },
       { name: 'Typescript', icon: SiTypescript, color: '#3178C6' },
-      { name: 'Javascript', icon: Javascript, color: '#F7DF1E' },
+      // { name: 'Javascript', icon: Javascript, color: '#F7DF1E' },
       { name: 'Python', icon: SiPython, color: '#3776AB' },
       { name: 'Solidity', icon: SiSolidity, color: 'grey' },
     ],
@@ -65,12 +65,12 @@ export const skills: SkillGroup[] = [
     id: '4',
     category: 'front-end',
     skills: [
-      { name: 'JavaFx', icon:FaJava , color: '#5a0fc8' },
+      { name: 'JavaFx', icon: FaJava, color: '#5a0fc8' },
       { name: 'React', icon: SiReact, color: '#61DAFB' },
       { name: 'CSS3', icon: SiCss3, color: '#264de4' },
     ],
   },
-  
+
   {
     id: '5',
     category: 'cloud',
@@ -82,7 +82,7 @@ export const skills: SkillGroup[] = [
       },
       { name: 'Azure', icon: TbBrandAzure, color: '#4285F4' },
       { name: 'Google Cloud Platform', icon: SiGooglecloud, color: '#4285F4' },
-     
+
     ],
   },
 

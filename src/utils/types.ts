@@ -18,13 +18,13 @@ export interface RoleType {
 
 export interface Skill {
   name: string
-  icon: IconType | ((props: IconProps) => JSX.Element)
+  icon: React.ElementType
   color: string
 }
 
 export interface Education {
   name: String
-  icon: string 
+  icon: string
   color: string
 }
 

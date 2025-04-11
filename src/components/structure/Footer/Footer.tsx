@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next'
-import { Flex, Link, Text, HStack, IconButton, Stack } from '@chakra-ui/react'
-import { VscArrowUp } from 'react-icons/vsc'
+import { Flex, Link, Text, HStack, Button, Stack } from '@chakra-ui/react'
+import { ChevronUpIcon } from '@chakra-ui/icons'
 import { usePostHog } from 'posthog-js/react'
 import { config } from '@config/config'
 
@@ -63,14 +63,15 @@ export const Footer: React.FC = () => {
             </Link>
           ))}
         </HStack>
-        <IconButton
+        <Button
           aria-label={t('go-to-top')}
           title={t('go-to-top')}
-          icon={<VscArrowUp />}
           variant='icon'
           size='icon'
           onClick={() => window.scrollTo(0, 0)}
-        />
+        >
+          <ChevronUpIcon />
+        </Button>
       </Stack>
     </Flex>
   )
