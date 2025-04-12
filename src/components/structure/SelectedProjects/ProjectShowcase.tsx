@@ -39,9 +39,11 @@ export const ProjectShowcase: React.FC<Project> = ({
       overflow='hidden'
     >
       <VStack flex='2' py='4' align='flex-start' justify='center' spacing='4'>
-        <Heading as='h3'>{title}</Heading>
+        <Heading as='h3' sx={{ wordBreak: 'break-word' }}>{title}</Heading>
         <Divider opacity='1' />
-        <Text>{description[i18n.language as keyof typeof description]}</Text>
+        <Text sx={{ overflowWrap: 'break-word', wordBreak: 'break-word' }}>
+          {description[i18n.language as keyof typeof description]}
+        </Text>
         <HStack spacing='4'>
           {homepage && (
             <Link
@@ -85,7 +87,7 @@ export const ProjectShowcase: React.FC<Project> = ({
           borderBottom='none'
           borderTopRadius='1.375rem'
         >
-          <ImageWithBorder title={title} image={image}/>
+          <ImageWithBorder title={title} image={image} />
         </Box>
         <MotionBox
           display={{ base: 'none', md: 'block' }}

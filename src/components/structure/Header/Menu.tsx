@@ -3,10 +3,12 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { NavItem, type NavItemProps } from './NavItem'
 
 const navItems: Omit<NavItemProps, 'onClose'>[] = [
-  { name: 'home', href: '/' },
-  { name: 'projects', href: '/#projects' },
-  { name: 'bookmarks', href: '/education' },
-  { name: 'contact', href: '/#contact' },
+  { name: 'experience-heading', href: '/#experience' },
+  { name: 'selected-projects', href: '/#projects' },
+  { name: 'open-source', href: '/#education' },
+  { name: 'skills-heading', href: '/#skills' },
+  { name: 'hobbies-heading', href: '/#hobbies' },
+  { name: 'contact-me', href: '/#contact' },
 ]
 
 const MotionStack = motion(Stack)

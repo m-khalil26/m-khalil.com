@@ -48,7 +48,7 @@ export const Hero: React.FC = () => {
           {t('hero-title')}
         </MotionHeading>
         <Image
-          src='/img/childhood-2.jpg'
+          src='/img/profile_pic.jpg'
           alt={t('contact-photo-alt')}
           boxSize={{ base: '250px', sm: '300px', md: '400px', lg: '450px' }}
           objectFit='cover'
@@ -83,7 +83,7 @@ export const Hero: React.FC = () => {
         </NextLink>
       </VStack>
       <Image
-        src='/img/childhood-2.jpg'
+        src='/img/profile_pic.jpg'
         alt={t('contact-photo-alt')}
         boxSize={{ base: '250px', sm: '300px', md: '400px', lg: '450px' }}
         objectFit='cover'

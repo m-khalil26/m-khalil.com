@@ -54,11 +54,11 @@ export const Contribution: React.FC<ContributionProps> = ({
         <Flex mt='2' mb='4'>
           <Badge colorScheme={role.color}>{role.label}</Badge>
         </Flex>
-        <Text flex='1' mb='4'>
+        <Text flex='1' mb='4' sx={{ overflowWrap: 'break-word', wordBreak: 'break-word' }}>
           {description[i18n.language as keyof typeof description]}
         </Text>
         <Flex justify='space-between'>
-        <HStack>
+          <HStack>
             {topics.map((topic) => (
               <Tag
                 key={topic}
@@ -70,7 +70,7 @@ export const Contribution: React.FC<ContributionProps> = ({
               </Tag>
             ))}
           </HStack>
-          <Image 
+          <Image
             src={language.icon}
             alt={`${language.name} logo`}
             boxSize='10'

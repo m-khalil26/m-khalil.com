@@ -15,7 +15,7 @@ export const ModestBeginningsCard: React.FC = () => {
           Mes modestes débuts
         </Text>
         <Image
-          src="/img/childhood-2.jpg"
+          src='/img/child.png'
           alt="Mes modestes débuts"
           borderRadius="md"
           objectFit="cover"

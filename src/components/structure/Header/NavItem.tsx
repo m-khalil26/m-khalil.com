@@ -21,6 +21,11 @@ export const NavItem: React.FC<NavItemProps> = ({ name, href, onClose }) => {
         aria-current={pathname === href ? 'page' : 'false'}
         variant='navItem'
         onClick={onClose}
+        sx={{
+          wordBreak: 'break-word',
+          textAlign: 'center',
+          whiteSpace: 'normal',
+        }}
       >
         {t(name)}
       </Button>
