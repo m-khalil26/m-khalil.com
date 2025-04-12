@@ -10,8 +10,9 @@ import {
 } from 'react-icons/si'
 import Maraudr from '@public/img/projects/maraudR.png'
 import EXIT from '@public/img/projects/exIT.png'
-import WhyPigeonsImage from '@public/img/projects/why-pigeons-full.png'
+import BETL from '@public/img/projects/BETL.png'
 import type { Project } from '@utils/types'
+import EsgixImage from '@public/img/projects/ESGIX.png'
 
 export const projects: Project[] = [
   {
@@ -22,7 +23,8 @@ export const projects: Project[] = [
       fr: 'Maraudr est un ERP à taille humaine, facile à prendre en main qui a pour but d\'organiser et d\'aider les associaions dans leurs travails journaliers',
     },
     image: { src: Maraudr },
-    homepage: 'https://hypzz.chr-ge.com/?ref=chr-ge.com',
+    homepage: '',
+    github: 'https://github.com/m-khalil26/ExIT',
     technologies: [
       // { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
       // { name: 'React', icon: SiReact, color: '#61DAFB' },
@@ -44,8 +46,8 @@ export const projects: Project[] = [
       fr: 'Un réseau social qui offre un enivronement pour déployer, partager et executer du code entre amis ou collègues.',
     },
     image: { src: EXIT },
-    homepage: 'https://kalabam.com/?ref=chr-ge.com',
-    github: 'https://github.com/chr-ge/kalabam',
+    homepage: '',
+    github: 'https://github.com/maraudr-app',
     technologies: [
       // { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
       // { name: 'React', icon: SiReact, color: '#61DAFB' },
@@ -67,8 +69,8 @@ export const projects: Project[] = [
       en: 'An ETL for extracting use-case driven anonymized production datasets, and loading it in test environement',
       fr: 'Un ETL qui permet l\'extraction de jeux de données ciblés selon le cas d\'usage, tout en les anonymisant et les charegeant dans des environnements de tests ',
     },
-    image: { src: WhyPigeonsImage },
-    github: 'https://github.com/chr-ge/why-pigeons',
+    image: { src: BETL },
+    // github: 'https://github.com/chr-ge/why-pigeons',
     technologies: [
       // { name: 'Laravel', icon: SiLaravel, color: '#FF2D20' },
       // { name: 'React', icon: SiReact, color: '#61DAFB' },
@@ -79,6 +81,28 @@ export const projects: Project[] = [
       { label: 'full-stack', colorScheme: 'pink' },
       { label: 'e-commerce', colorScheme: 'purple' },
       { label: 'website', colorScheme: 'cyan' },
+    ],
+    isShowcased: true,
+  },
+  {
+    id: '4',
+    title: 'ESGIX',
+    description: {
+      en: 'A Social network ( Twitterish ) for the ESGI students ( On mobile )',
+      fr: 'Un réseau social ( Type twitter ) pour les etudiants de l\'ESGI. Sur mobile.',
+    },
+    image: { src: EsgixImage },
+    github: 'https://github.com/ESGI-5AL1/flutter-esgix',
+    technologies: [
+      // { name: 'Laravel', icon: SiLaravel, color: '#FF2D20' },
+      // { name: 'React', icon: SiReact, color: '#61DAFB' },
+      // { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791' },
+      // { name: 'Stripe', icon: SiStripe, color: '#008CDD' },
+    ],
+    tags: [
+      { label: 'full-stack', colorScheme: 'pink' },
+      { label: 'Social media', colorScheme: 'purple' },
+      { label: 'flutter', colorScheme: 'cyan' },
     ],
     isShowcased: true,
   },

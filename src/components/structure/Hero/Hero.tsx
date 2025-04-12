@@ -58,7 +58,7 @@ export const Hero: React.FC = () => {
           bg='white'
           transition="transform 0.3s ease-in-out"
           _hover={{ transform: 'scale(1.05)' }}
-          display={{ base: 'block', md: 'none' }} // Show only on small screens
+          display={{ base: 'block', md: 'none' }}
         />
         <NextLink href='/#projects' passHref legacyBehavior>
           <MotionButton
@@ -93,7 +93,7 @@ export const Hero: React.FC = () => {
         bg='white'
         transition="transform 0.3s ease-in-out"
         _hover={{ transform: 'scale(1.05)' }}
-        display={{ base: 'none', md: 'block' }} // Show only on large screens
+        display={{ base: 'none', md: 'block' }}
         ml={{ base: '0', md: '8' }}
       />
     </MotionFlex>
