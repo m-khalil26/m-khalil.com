@@ -1,17 +1,13 @@
 import NextLink from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { Button, chakra, Flex, Heading, VStack, Image } from '@chakra-ui/react'
-import profilepic from '@public/img/childhood.jpg'
-
 import { motion } from 'framer-motion'
 import { usePostHog } from 'posthog-js/react'
-import { config } from '@config/config'
 import { ButtonArrow } from '../../meta'
 
 const MotionFlex = motion(Flex)
 const MotionHeading = motion(Heading)
 const MotionButton = motion(Button)
-
 
 export const Hero: React.FC = () => {
   const { t } = useTranslation('common')
@@ -21,7 +17,10 @@ export const Hero: React.FC = () => {
     <MotionFlex
       h='calc(100vh - var(--chakra-sizes-header-height))'
       px={{ base: '4', md: '8' }}
-      align='center'
+      align={{ base: 'center', md: 'center' }}
+      justify={{ base: 'center', md: 'space-between' }}
+      direction={{ base: 'column', md: 'row' }}
+      gap={{ base: '8', md: '0' }}
       animate={{
         background: [
           'linear-gradient(80deg, #ddcbf8 0%, #eaed9e 100%)',
@@ -30,7 +29,13 @@ export const Hero: React.FC = () => {
       }}
       transition={{ repeat: Infinity, repeatType: 'reverse', duration: 1.75 }}
     >
-      <VStack align='flex-start' pb='32' maxW='container.md' spacing='12'>
+      <VStack
+        align={{ base: 'center', md: 'flex-start' }}
+        spacing={{ base: '8', md: '12' }}
+        w='full'
+        maxW={{ base: 'full', md: 'container.md' }}
+        textAlign={{ base: 'center', md: 'left' }}
+      >
         <MotionHeading
           as='h1'
           variant='hero'
@@ -42,6 +47,19 @@ export const Hero: React.FC = () => {
         >
           {t('hero-title')}
         </MotionHeading>
+        <Image
+          src='/img/childhood-2.jpg'
+          alt={t('contact-photo-alt')}
+          boxSize={{ base: '250px', sm: '300px', md: '400px', lg: '450px' }}
+          objectFit='cover'
+          borderRadius='2xl'
+          border='1px solid black'
+          p='10px'
+          bg='white'
+          transition="transform 0.3s ease-in-out"
+          _hover={{ transform: 'scale(1.05)' }}
+          display={{ base: 'block', md: 'none' }} // Show only on small screens
+        />
         <NextLink href='/#projects' passHref legacyBehavior>
           <MotionButton
             as='a'
@@ -66,14 +84,17 @@ export const Hero: React.FC = () => {
       </VStack>
       <Image
         src='/img/childhood-2.jpg'
-        // alt={t('hero-alt')}
-        boxSize={{ base: '450px', md: '450px' }}
+        alt={t('contact-photo-alt')}
+        boxSize={{ base: '250px', sm: '300px', md: '400px', lg: '450px' }}
         objectFit='cover'
-        ml={{ base: '4', md: '8' }}
         borderRadius='2xl'
         border='1px solid black'
-        p='10px' // Added padding to detach the border
-        bg='white' // Added background color to make the gap visible
+        p='10px'
+        bg='white'
+        transition="transform 0.3s ease-in-out"
+        _hover={{ transform: 'scale(1.05)' }}
+        display={{ base: 'none', md: 'block' }} // Show only on large screens
+        ml={{ base: '0', md: '8' }}
       />
     </MotionFlex>
   )
