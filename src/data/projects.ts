@@ -26,10 +26,10 @@ export const projects: Project[] = [
     homepage: '',
     github: 'https://github.com/m-khalil26/ExIT',
     technologies: [
-      // { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
-      // { name: 'React', icon: SiReact, color: '#61DAFB' },
-      // { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
-      // { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
+      { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
+      { name: 'React', icon: SiReact, color: '#61DAFB' },
+      { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
+      { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
     ],
     tags: [
       { label: 'full-stack', colorScheme: 'pink' },
@@ -49,10 +49,10 @@ export const projects: Project[] = [
     homepage: '',
     github: 'https://github.com/maraudr-app',
     technologies: [
-      // { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
-      // { name: 'React', icon: SiReact, color: '#61DAFB' },
-      // { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
-      // { name: 'ChakraUI', icon: SiChakraui, color: '#319795' },
+      { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
+      { name: 'React', icon: SiReact, color: '#61DAFB' },
+      { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
+      { name: 'ChakraUI', icon: SiChakraui, color: '#319795' },
     ],
     tags: [
       { label: 'full-stack', colorScheme: 'pink' },
@@ -72,10 +72,10 @@ export const projects: Project[] = [
     image: { src: BETL },
     // github: 'https://github.com/chr-ge/why-pigeons',
     technologies: [
-      // { name: 'Laravel', icon: SiLaravel, color: '#FF2D20' },
-      // { name: 'React', icon: SiReact, color: '#61DAFB' },
-      // { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791' },
-      // { name: 'Stripe', icon: SiStripe, color: '#008CDD' },
+      { name: 'Laravel', icon: SiLaravel, color: '#FF2D20' },
+      { name: 'React', icon: SiReact, color: '#61DAFB' },
+      { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791' },
+      { name: 'Stripe', icon: SiStripe, color: '#008CDD' },
     ],
     tags: [
       { label: 'full-stack', colorScheme: 'pink' },
@@ -94,10 +94,10 @@ export const projects: Project[] = [
     image: { src: EsgixImage },
     github: 'https://github.com/ESGI-5AL1/flutter-esgix',
     technologies: [
-      // { name: 'Laravel', icon: SiLaravel, color: '#FF2D20' },
-      // { name: 'React', icon: SiReact, color: '#61DAFB' },
-      // { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791' },
-      // { name: 'Stripe', icon: SiStripe, color: '#008CDD' },
+      { name: 'Laravel', icon: SiLaravel, color: '#FF2D20' },
+      { name: 'React', icon: SiReact, color: '#61DAFB' },
+      { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791' },
+      { name: 'Stripe', icon: SiStripe, color: '#008CDD' },
     ],
     tags: [
       { label: 'full-stack', colorScheme: 'pink' },

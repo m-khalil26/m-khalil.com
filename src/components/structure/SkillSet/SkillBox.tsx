@@ -1,5 +1,6 @@
 import { Center, useDisclosure, Tooltip, Icon } from '@chakra-ui/react'
 import type { Skill } from '@utils/types'
+import { IconType } from 'react-icons';
 
 export interface SkillProps extends Skill {
   setBorderColor: (color: string) => void
@@ -36,8 +37,7 @@ export const SkillBox: React.FC<SkillProps> = ({
         }}
         onClick={onToggle}
       >
-        {/* <Icon as={icon} aria-label={name} boxSize='8' color={color} /> */}
-      </Center>
+        <Icon as={icon as any} aria-label={name} boxSize='8' color={color} />      </Center>
     </Tooltip>
   )
 }
