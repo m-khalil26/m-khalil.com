@@ -1,6 +1,9 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
+import { useTranslation } from 'next-i18next';
 
 export const ModestBeginningsCard: React.FC = () => {
+  const { t } = useTranslation('common');
+
   return (
     <Box
       p="4"
@@ -12,11 +15,11 @@ export const ModestBeginningsCard: React.FC = () => {
     >
       <Flex h="full" flexDir="column" align="center" justify="center">
         <Text fontSize="xl" fontWeight="bold" mb="4">
-          Mes modestes débuts
+          {t('modest-beginnings')}
         </Text>
         <Image
           src='/img/child.png'
-          alt="Mes modestes débuts"
+          alt={t('modest-beginnings')}
           borderRadius="md"
           objectFit="cover"
           w="full"
