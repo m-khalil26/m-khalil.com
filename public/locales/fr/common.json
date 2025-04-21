@@ -23,19 +23,18 @@
   "contact-me": "Contactez moi",
   "email": "E-mail",
   "message": "Message",
-  "email-placeholder": "yabba_dabba_doo@gmail.com",
+  "email-placeholder": "yusuke_urameishi@gmail.com",
   "message-placeholder": "Travaillons ensemble.",
   "message-sent": "Message envoyé.",
   "message-text": "Je reviendrai à vous dès que possible.",
   "message-error": "Une erreur est survenue lors de l'envoi de votre message.",
   "send": "Envoyer",
-  "hobbies-heading":"Au sujet de la photographie",
-  "contact-photo-alt":"Photo de mon enfance",
-  
+  "hobbies-heading": "Au sujet de la photographie",
+  "contact-photo-alt": "Photo de mon enfance",
   "made-in-mtl": "Fabriqué à Paris",
   "go-to-top": "Aller en haut",
   "coming-soon": "Bientôt disponible",
   "back-home": "Retourner à l’accueil",
-  "experience-heading": "Expérience professionnelle"
-
+  "experience-heading": "Expérience professionnelle",
+  "download-resume": "Télécharger mon CV"
 }

@@ -23,17 +23,18 @@
   "contact-me": "Contact Me",
   "email": "Email",
   "message": "Message",
-  "email-placeholder": "yabba_dabba_doo@gmail.com",
+  "email-placeholder": "yusuke_urameishi@gmail.com",
   "message-placeholder": "Let's work together.",
   "message-sent": "Message Sent.",
   "message-text": "I'll get back to you ASAP.",
   "message-error": "There was an error sending your message.",
-  "hobbies-heading":"About photography",
+  "hobbies-heading": "About photography",
   "send": "Send",
   "made-in-mtl": "Crafted in Paris",
-  "contact-photo-alt":"Childhood picture",
+  "contact-photo-alt": "Childhood picture",
   "go-to-top": "Go to top",
   "coming-soon": "Coming Soon",
   "back-home": "Back to Home",
-  "experience-heading": "Experience"
+  "experience-heading": "Experience",
+  "download-resume": "Download my resume"
 }

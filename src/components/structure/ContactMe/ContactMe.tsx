@@ -6,10 +6,10 @@ import {
   FormLabel,
   Heading,
   Input,
-  Stack,
   Textarea,
   useToast,
   VStack,
+  Stack,
 } from '@chakra-ui/react'
 import { usePostHog } from 'posthog-js/react'
 import { useForm } from 'react-hook-form'
@@ -85,9 +85,11 @@ export const ContactMe: React.FC = () => {
       spacing={{ base: '16', md: '4', xl: '2' }}
       scrollMarginTop='calc(var(--chakra-sizes-header-height) - 1px)'
     >
-      <Heading as='h2' flex='1' variant='section' size='2xl'>
-        {t('contact-me')}
-      </Heading>
+      <VStack flex='1' align='flex-start' spacing='6'>
+        <Heading as='h2' variant='section' size='2xl'>
+          {t('contact-me')}
+        </Heading>
+      </VStack>
       <VStack as='form' onSubmit={onSubmit} flex='1' spacing='6'>
         <FormControl isInvalid={!!errors.email}>
           <FormLabel>{t('email')}</FormLabel>
@@ -103,27 +105,53 @@ export const ContactMe: React.FC = () => {
           />
           <FormErrorMessage>{errors.message?.message}</FormErrorMessage>
         </FormControl>
-        <Button
-          aria-label={t('send')}
-          alignSelf='flex-start'
-          variant='block'
-          isLoading={isSubmitting}
-          type='submit'
-          sx={{
-            '&:hover svg': {
-              transform: 'scaleX(1)',
-            },
-          }}
-        >
-          <span>{t('send')}</span>
-          <ButtonArrow
-            right='-7.5rem'
-            pos='absolute'
-            transform='scaleX(0)'
-            transformOrigin='left'
-            transition='transform 0.2s ease-in-out, fill 0.2s ease-in-out'
-          />
-        </Button>
+        <Stack direction={{ base: 'column', sm: 'row' }} spacing='4'>
+          <Button
+            aria-label={t('send')}
+            variant='block'
+            isLoading={isSubmitting}
+            type='submit'
+            sx={{
+              position: 'relative',
+              '&:hover svg': {
+                transform: 'scaleX(1)',
+                zIndex: 1,
+              },
+            }}
+          >
+            <span>{t('send')}</span>
+            <ButtonArrow
+              right='-7.5rem'
+              pos='absolute'
+              transform='scaleX(0)'
+              transformOrigin='left'
+              transition='transform 0.2s ease-in-out, fill 0.2s ease-in-out'
+              zIndex={1}
+            />
+          </Button>
+          <Button
+            as='a'
+            href='/documents/khalilmakhloufi-resume.pdf'
+            download="khalilmakhloufi-resume.pdf"
+            aria-label={t('download-resume')}
+            title={t('download-resume')}
+            variant='block'
+            sx={{
+              '&:hover svg': {
+                transform: 'scaleX(1)',
+              },
+            }}
+          >
+            <span>{t('download-resume')}</span>
+            <ButtonArrow
+              right='-7.5rem'
+              pos='absolute'
+              transform='scaleX(0)'
+              transformOrigin='left'
+              transition='transform 0.2s ease-in-out, fill 0.2s ease-in-out'
+            />
+          </Button>
+        </Stack>
       </VStack>
     </Stack>
   )
