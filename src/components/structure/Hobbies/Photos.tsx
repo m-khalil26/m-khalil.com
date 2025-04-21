@@ -19,6 +19,7 @@ export const Photos = () => {
 
   return (
     <VStack
+      id="hobbies"
       as="section"
       align="stretch"
       py="24"

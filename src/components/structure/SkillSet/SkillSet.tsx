@@ -23,6 +23,7 @@ export const SkillSet: React.FC = () => {
 
   return (
     <VStack
+      id="skills" // Add this ID to match the menu href
       as='section'
       align='stretch'
       py='20'

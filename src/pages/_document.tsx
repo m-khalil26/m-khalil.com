@@ -7,7 +7,9 @@ class Document extends NextDocument {
   render(): JSX.Element {
     return (
       <Html>
-        <Head />
+        <Head>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         <body>
           <ColorModeScript />
           <Main />

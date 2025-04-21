@@ -8,6 +8,7 @@ export const ExperienceList: React.FC = () => {
 
   return (
     <VStack
+      id="experience" // Add this ID to match the menu href
       as="section"
       align="stretch"
       py="20"

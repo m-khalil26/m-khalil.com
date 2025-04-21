@@ -8,6 +8,7 @@ export const OpenSource: React.FC = () => {
 
   return (
     <VStack
+      id="education"
       as="section"
       align="stretch"
       pb="20"
